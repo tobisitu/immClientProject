@@ -1,0 +1,249 @@
+/*Helps with text responsiveness*/
+html {
+    font-size: calc(1em + 1vw);
+}
+
+/*Disable horizontal scroll*/
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*
+GENERAL- Apply to Multiple Sections
+*/
+
+/*
+TITLES IN SECTIONS:
+*/
+
+/*Left Floating Titles*/
+.section-title-left {
+    /*    margin-left: -25%;*/
+    color: #006341;
+    font-size: 110%;
+    margin-top: 5%;
+    /*    padding-top: 5%;*/
+    padding-bottom: 10%;
+    padding-left: 4%;
+    border-left: 3px solid #43b02a;
+}
+
+/*Right Floating Titles*/
+.section-title-right {
+    margin-right: auto;
+    color: #006341;
+    font-size: 110%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+    padding-right: 4%;
+    border-right: 3px solid #43b02a;
+    text-align: right;
+}
+
+
+/*General Paragraph formatting in sections*/
+.section-body p {
+    margin-top: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 70%;
+
+}
+
+/*To remove the margin-top property from the second paragraph of a section*/
+.section-body p + p {
+    margin-top: 0;
+}
+
+/*To create the divider between sections*/
+.section {
+    border-bottom: 3px solid #43b02a;
+}
+
+
+/*
+SPECIFIC - Apply to Specific Sections of code
+*/
+
+/*
+HEADER SECTION
+*/
+/*Banner Image settings*/
+.banner-img {
+    background-color: #006341;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*
+NAVIGATION SECTION
+*/
+.navbar {
+    background-color: #006341;
+
+    width: 100%;
+}
+
+/*Navbar text */
+.navbar .nav-item .nav-link {
+    color: white;
+    font-size: 80%;
+}
+
+/*Create separators between Navigation Items*/
+.navbar-nav li {
+    border-right: 1px solid white;
+}
+
+.navbar-nav li:last-child {
+    border-right: none;
+}
+
+/*Padding between Navigation links*/
+.navbar-nav li a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*
+PROGRAM OVERVIEW SECTION
+*/
+
+/*
+BACKGROUND ICON
+*/
+.section-program-overview {
+    background-image: url(../assets/images/icons/overview.png);
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/*
+Buttons for e-brochure and MoreInfo Links in 
+Overview Section
+*/
+.buttons {
+    margin: 0 auto;
+}
+
+.ebrochure-button button {
+    float: left;
+    background-color: #43b02a;
+    color: white;
+    font-size: 80%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.moreinfo-button button {
+    float: right;
+    background-color: #43b02a;
+    color: white;
+    font-size: 80%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*
+COURSES SECTION
+*/
+
+/*
+BACKGROUND ICON
+*/
+.section-program-courses {
+    background-image: url(../assets/images/icons/courses.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 100% 0%;
+    /*    padding-top: 5%;*/
+}
+
+/*Style for Level text*/
+.level {
+    color: #006341;
+    font-size: 90%;
+    padding-bottom: 2%;
+}
+
+.course-image {
+    /*     Change to 100% when Asmaa sends pictures*/
+    width: 60%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.courses-div {
+    text-align: center;
+}
+
+.curtain {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*
+FACULTY SECTION
+*/
+
+/*
+BACKGROUND ICON
+*/
+.section-program-faculty {
+    background-image: url(../assets/images/icons/faculty.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0% 0%;
+}
+
+/*Professor Images at top of Cards*/
+
+.card-img-top {
+    /*    Center align the image at the top of the card*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    position: relative;
+    border-radius: 0;
+    padding-top: 5%;
+    top: 0;
+
+}
+
+/*Background swoosh position for Professor Name in Card*/
+.card-title-img-top {
+    /*    margin-top: -10%;*/
+
+    position: absolute;
+    top: 19%;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    background-image: url("../assets/images/faculty/name-background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.professor-name {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    /*    display: inline-block;*/
+}
