@@ -1,7 +1,7 @@
 /*Helps with text responsiveness*/
-html {
+/*html {
     font-size: calc(1em + 1vw);
-}
+}*/
 
 /*Disable horizontal scroll*/
 html,
@@ -23,7 +23,6 @@ TITLES IN SECTIONS:
 .section-title-left {
     /*    margin-left: -25%;*/
     color: #006341;
-    font-size: 110%;
     margin-top: 5%;
     /*    padding-top: 5%;*/
     padding-bottom: 10%;
@@ -35,7 +34,6 @@ TITLES IN SECTIONS:
 .section-title-right {
     margin-right: auto;
     color: #006341;
-    font-size: 110%;
     margin-top: 5%;
     padding-bottom: 10%;
     padding-right: 4%;
@@ -49,7 +47,6 @@ TITLES IN SECTIONS:
     margin-top: -5%;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 70%;
 
 }
 
@@ -93,7 +90,6 @@ NAVIGATION SECTION
 /*Navbar text */
 .navbar .nav-item .nav-link {
     color: white;
-    font-size: 80%;
 }
 
 /*Create separators between Navigation Items*/
@@ -107,8 +103,12 @@ NAVIGATION SECTION
 
 /*Padding between Navigation links*/
 .navbar-nav li a {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
 }
 
 /*
@@ -120,9 +120,9 @@ BACKGROUND ICON
 */
 .section-program-overview {
     background-image: url(../assets/images/icons/overview.png);
-    background-position: 0% 10%;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 18%;
 }
 
 /*
@@ -137,8 +137,8 @@ Overview Section
     float: left;
     background-color: #43b02a;
     color: white;
-    font-size: 80%;
-    border-radius: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -146,8 +146,8 @@ Overview Section
     float: right;
     background-color: #43b02a;
     color: white;
-    font-size: 80%;
-    border-radius: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -163,7 +163,7 @@ BACKGROUND ICON
     background-image: url(../assets/images/icons/courses.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 18%;
     background-position: 100% 0%;
     /*    padding-top: 5%;*/
 }
@@ -171,8 +171,11 @@ BACKGROUND ICON
 /*Style for Level text*/
 .level {
     color: #006341;
-    font-size: 90%;
     padding-bottom: 2%;
+}
+
+p.level {
+    font-size: 1rem;
 }
 
 .course-image {
@@ -191,6 +194,9 @@ BACKGROUND ICON
     height: auto;
 }
 
+p.course-title {
+    font-size: 1rem;
+}
 
 
 /*
@@ -204,7 +210,7 @@ BACKGROUND ICON
     background-image: url(../assets/images/icons/faculty.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 18%;
     background-position: 0% 0%;
 }
 
@@ -236,14 +242,39 @@ BACKGROUND ICON
 .card-title {
     background-image: url("../assets/images/faculty/name-background.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-size: cover;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    transform: translateY(-1.5rem);
+    height: 13vh;
+    font-size: 1rem;
 }
 
-.professor-name {
+p.professor-name {
     transform: rotate(-90deg);
+    /*    writing-mode: vertical-rl;*/
     position: absolute;
-    left: 0;
+    top: 40px;
+    font-size: 1.5rem;
     /*    display: inline-block;*/
+}
+
+p.card-text {
+    font-size: 1rem;
+    margin-top: -50px;
+}
+
+/*
+TESTIMONIALS SECTION
+*/
+
+/*
+BACKGROUND ICON
+*/
+.section-program-testimonials {
+    background-image: url(../assets/images/icons/testimonials.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 18%;
+    background-position: 100% 0%;
 }
