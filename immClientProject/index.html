@@ -19,7 +19,10 @@
     <!--BANNER/HEADER SECTION-->
     <section class="banner">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+
             <div class="carousel-inner">
+
+                <img class="logo" src="assets/images/logos/program-logo.png" alt="">
                 <div class="carousel-item active">
                     <img class="banner-img d-block w-100" src="assets/images/header/banner-one.png" alt="First slide">
                 </div>
@@ -32,9 +35,11 @@
                 <div class="carousel-item">
                     <img class="banner-img d-block w-100" src="assets/images/header/banner-four.png" alt="Fourth slide">
                 </div>
+                <div class="container">
+                    <button class="apply">Apply Now!</button>
+                </div>
+
             </div>
-        </div>
-        <div>
 
         </div>
 
@@ -53,16 +58,16 @@
         <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
             <ul class="nav navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Program Overview</a>
+                    <a class="nav-link" href="#Program-Overview">Program Overview</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Courses</a>
+                    <a class="nav-link" href="#Courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Faculty</a>
+                    <a class="nav-link" href="#Faculty">Faculty</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials &amp; Interfaces</a>
+                    <a class="nav-link" href="#Testimonials">Testimonials</a>
                 </li>
             </ul>
         </div>
@@ -74,11 +79,11 @@
         <div class="container section-body">
 
             <div>
-                <h2 class="section-title-left">Program Overview</h2>
+                <h2 class="section-title-left" id="Program-Overview">Program Overview</h2>
             </div>
             <div>
-                <p class="first-paragraph">This One-year Graduate Certificate program prepares students to work as multimedia designers and producers. The knowledge and experience gained are now standard in a wide variety of fields. </p>
-                <p class=" pb-3">Graduates may find employment in dynamic media development, web design, server-side development, photography, videography, motion graphics, project management, UX design, graphic design and layout, online education. Other opportunities involve start-up businesses and a wide variety of alternate professional fields.</p>
+                <p>This One-year Graduate Certificate program prepares students to work as multimedia designers and producers. The knowledge and experience gained are now standard in a wide variety of fields. </p>
+                <p>Graduates may find employment in dynamic media development, web design, server-side development, photography, videography, motion graphics, project management, UX design, graphic design and layout, online education. Other opportunities involve start-up businesses and a wide variety of alternate professional fields.</p>
             </div>
             <div class="buttons row pt-5 pb-4">
                 <div class="col ebrochure-button">
@@ -98,77 +103,396 @@
 
         <div class="container section-body">
             <div>
-                <h2 class="section-title-right">Courses</h2>
+                <h2 class="section-title-right" id="Courses">Courses</h2>
             </div>
             <div>
+                <!--Level 1 courses-->
                 <h3 class="level pb-4">Level 1</h3>
 
                 <div class="row ">
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/web-design.png" class="course-image pb-4" alt="Web design image">
+                        <!-- Image trigger modal for Web Design-->
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Web-Design-Modal">
+                            <img src="assets/images/courses/web-design.png" alt="Web design image">
+                        </div>
                         <p class="course-title pt-2">Web Design</p>
+
+                        <!-- Web Design Modal -->
+                        <div class="modal fade" id="Web-Design-Modal" tabindex="-1" role="dialog" aria-labelledby="Web-Design-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Web Design </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students learn HTML and CSS to create structure and organize web-based media. </li>
+                                            <li>Students learn and practice industry-standard coding techniques.</li>
+                                            <li>Students learn how to use industry standard software packages, used for layout, programming and developing web pages and sites.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/graphic-design.png" class="course-image pb-4" alt="Graphic Design image">
-                        <p class="course-title pt-2">Graphic Design</p>
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Graphic-Design-Modal">
+
+                            <!-- Image trigger modal for Graphic Design-->
+                            <img src="assets/images/courses/graphic-design.png" alt="Graphic Design image">
+                        </div>
+                        <p class="course-title pt-2">Graphic Applications</p>
+
+                        <!-- Graphic Applications Modal -->
+                        <div class="modal fade" id="Graphic-Design-Modal" tabindex="-1" role="dialog" aria-labelledby="Graphic-Design-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Graphic Applications </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students learn how to use Adobe Photoshop and Illustrator, the current industry-standard in graphic design and editing software.</li>
+                                            <li>Students learn the fundamentals of digital design and layout.</li>
+                                            <li>Students learn the creation of graphics for the screen, video and web.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/studio-lab.png" class="course-image pb-4" alt="Studio Lab image">
-                        <p class="course-title pt-2">Studio Lab</p>
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Studio-Lab-Modal">
+                            <!-- Image trigger modal for Studio Lab -->
+                            <img src="assets/images/courses/studio-lab.png" alt="Studio Lab image">
+                        </div>
+                        <p class="course-title pt-2">Studio Lab I</p>
+
+                        <!-- Studio Lab I Modal -->
+                        <div class="modal fade" id="Studio-Lab-Modal" tabindex="-1" role="dialog" aria-labelledby="Studio-Lab-I-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Studio Lab I </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students learn the common threads linked to various multimedia industries. </li>
+                                            <li>Students learn dSLR photography, file management, project management and presentation practices.</li>
+                                            <li>Guest speakers and field trips are planned, when possible, to give a real-life view into various related industries.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/ux-design.png" class="course-image pb-4" alt="UX design image">
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Ux-Des-Modal">
+                            <!-- Image trigger modal for UX Design -->
+                            <img src="assets/images/courses/ux-design.png" alt="UX design image">
+                        </div>
                         <p class="course-title pt-2">UX Design</p>
+
+                        <!-- UX Design Modal -->
+                        <div class="modal fade" id="Ux-Des-Modal" tabindex="-1" role="dialog" aria-labelledby="Ux-Des-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">UX Design </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students explore the essential design elements and layout components, which are used in creating rich unique user experiences. </li>
+                                            <li>Students learn the planning and development of a professional level layout for the web, documentation, video, animation or interface which is key to any successful media based project.</li>
+                                            <li>opics include colour, typography, information hierarchy, common look and feel, psychology and the design brief.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/video-comp.png" class="course-image pb-4" alt="Video Composition image">
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Video-Comp-Modal">
+                            <!-- Image trigger modal for Video Composition -->
+                            <img src="assets/images/courses/video-comp.png" alt="Video Composition image">
+                        </div>
                         <p class="course-title pt-2">Video Composition</p>
+
+                        <!-- Video Composition Modal -->
+                        <div class="modal fade" id="Video-Comp-Modal" tabindex="-1" role="dialog" aria-labelledby="Video-Comp-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Video Composition </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students are introduced to non-linear video editing and composition. </li>
+                                            <li>Adobe Premiere Pro is used in the importation, assembly and exportation of dynamic video products destined for the web, screen or hand held devices. </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-sm-4 courses-div pb-4">
-                        <img src="assets/images/courses/web-dev.png" class="course-image pb-4" alt="Web Development image">
+                        <div class="course-image pb-4" data-toggle="modal" data-target="#Web-Dev-Modal">
+                            <!-- Image trigger modal for Web Development -->
+                            <img src="assets/images/courses/web-dev.png" alt="Web Development image">
+                        </div>
                         <p class="course-title pt-2">Web Development</p>
+
+                        <!-- Web Development Modal -->
+                        <div class="modal fade" id="Web-Dev-Modal" tabindex="-1" role="dialog" aria-labelledby="Web-Dev-Modal-Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Web Development </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Students gain an understanding of the current and next-generation mark-up languages for web development, including HTML, CSS and JavaScript</li>
+                                            <li>A content management system (CMS) is also studied.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Divider-->
+        <!--Course Level Divider-->
         <div>
             <img class="curtain" src="assets/images/curtain.png" alt="courses divider">
         </div>
 
-
+        <!--Level 2 Courses-->
         <div class="container section-body pb-3">
             <h3 class="level pb-4">Level 2</h3>
 
             <div class="row">
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/database.png" class="course-image pb-4" alt="Databases and Serverside Dev image">
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Databases-Modal">
+                        <!-- Image trigger modal for Databases & Serverside-->
+                        <img src="assets/images/courses/database.png" alt="Databases and Serverside Dev image">
+                    </div>
                     <p class="course-title pt-2">Databases &amp; Serverside Development</p>
+
+                    <!-- Databases & Serverside Modal -->
+                    <div class="modal fade" id="Databases-Modal" tabindex="-1" role="dialog" aria-labelledby="Databases-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Databases &amp; Serverside Development </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students explore more advanced technologies, such as PHP and MySQL and how they relate to dynamic web development. </li>
+                                        <li>Students move from client-side HTML and CSS coding to server-side development by working with back-end web-based programming languages.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/motion.png" class="course-image pb-4" alt="Motion Graphics image">
-                    <p class="course-title pt-2">Motion Graphics</p>
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Motion-Graphics-Modal">
+                        <!-- Image trigger modal for Motion Graphics-->
+                        <img src="assets/images/courses/motion.png" alt="Motion Graphics image">
+                    </div>
+                    <p class="course-title pt-2">Motion Graphics Effects</p>
+
+                    <!-- Motion Graphic Effects Modal -->
+                    <div class="modal fade" id="Motion-Graphics-Modal" tabindex="-1" role="dialog" aria-labelledby="Motion-Graphics-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Motion Graphic Effects </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students learn how to create motion graphic videos, visual effects for films, and how to combine animations with audio for use in media-based projects </li>
+                                        <li>The focus of this course is to help the student develop an understanding of the principles of animation and the various concepts of UX in motion graphics.</li>
+                                        <li>Students will further develop a critical eye in animation to help create visually pleasing and fluid videos through learning different motion graphic techniques.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/studio-lab-ii.png" class="course-image pb-4" alt="Studio Lab II image">
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Studio-Lab-II-Modal">
+                        <!-- Image trigger modal for Studio Lab II-->
+                        <img src="assets/images/courses/studio-lab-ii.png" alt="Studio Lab II image">
+                    </div>
                     <p class="course-title pt-2">Studio Lab II</p>
+
+                    <!-- Studio Lab II Modal -->
+                    <div class="modal fade" id="Studio-Lab-II-Modal" tabindex="-1" role="dialog" aria-labelledby="Studio-Lab-II-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Studio Lab II </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students focus on portfolio and resume development, and examine today's media-related industries.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/rich-media.png" class="course-image pb-4" alt="Motion Graphics image">
-                    <p class="course-title pt-2">Rich Media Services</p>
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Rich-Media-Modal">
+                        <!-- Image trigger modal for Rich Media Services-->
+                        <img src="assets/images/courses/rich-media.png" alt="Rich Media image">
+                    </div>
+                    <p class="course-title pt-2">Client-Side Development</p>
+
+                    <!-- Client-Side Development Modal -->
+                    <div class="modal fade" id="Rich-Media-Modal" tabindex="-1" role="dialog" aria-labelledby="Rich-Media-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Rich Media Services </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students are given the opportunity to create dynamic and interactive content for the web using various scripting techniques </li>
+                                        <li>Technologies covered include topics, such as AJAX, jQuery, JSON, XML and PHP.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/dynamic.png" class="course-image pb-4" alt="Dynamic Media image">
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Dynamic-Media-Modal">
+                        <!-- Image trigger modal for Dynamic Media-->
+                        <img src="assets/images/courses/dynamic.png" alt="Dynamic Media image">
+                    </div>
                     <p class="course-title pt-2">Dynamic Media</p>
+
+                    <!-- Dynamic Media Modal -->
+                    <div class="modal fade" id="Dynamic-Media-Modal" tabindex="-1" role="dialog" aria-labelledby="Dynamic-Media-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Dynamic Media</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students are introduced to dynamic media and the standards for creating enhanced presentations, animation and interfaces. </li>
+                                        <li>Possible topics include animation for the web, 3D and other associated tools used to create rich dynamic media.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 courses-div pb-4">
-                    <img src="assets/images/courses/client-project.png" class="course-image pb-4" alt="Client Projects image">
+                    <div class="course-image pb-4" data-toggle="modal" data-target="#Client-Project-Modal">
+                        <!-- Image trigger modal for Client Projects-->
+                        <img src="assets/images/courses/client-project.png" alt="Client Projects image">
+                    </div>
                     <p class="course-title pt-2">Client Projects</p>
+
+                    <!--  Client Projects Modal -->
+                    <div class="modal fade" id="Client-Project-Modal" tabindex="-1" role="dialog" aria-labelledby="Client-Project-Modal-Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Client Projects</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Students are provided a hands-on approach to a live-client project in which they learn the necessary steps in establishing a working relationship with clients. </li>
+                                        <li>Students plan, manage and develop a real-time multimedia based product, while developing teamwork practices and ethics while working in teams.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,7 +505,7 @@
 
         <div class="container section-body">
             <div>
-                <h2 class="section-title-left">Faculty</h2>
+                <h2 class="section-title-left" id="Faculty">Faculty</h2>
                 <div class="row pb-4">
                     <div class="col-xs-12 col-sm-6 col-md-4 d-flex align-items-stretch pb-5">
                     </div>
@@ -193,7 +517,7 @@
                                 <p class="professor-name">Amel</p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Amel is a part time professor and freelance web developer/designer. <br>He has been teaching web scripting at Algonquin since Winter 2014. Amel graduated in 2009 from the Algonquin College with diploma in Interactive Multimedia (today Interactive Media Management). <br>From 2009 to 2014, he worked in the industry as a front-end developer. Amel also graduated from the University of Ljubljana (Slovenia) in 1997 with degree in industrial engineering. He worked as industrial engineer until 2004 when Amel and his family moved from Bosnia and Herzegovina to Canada.</p>
+                                <p>Amel is a part time professor and freelance web developer/designer. <br>He has been teaching web scripting at Algonquin since Winter 2014. Amel graduated in 2009 from the Algonquin College with diploma in Interactive Multimedia (today Interactive Media Management). <br>From 2009 to 2014, he worked in the industry as a front-end developer. Amel also graduated from the University of Ljubljana (Slovenia) in 1997 with degree in industrial engineering. He worked as industrial engineer until 2004 when Amel and his family moved from Bosnia and Herzegovina to Canada.</p>
 
                             </div>
                         </div>
@@ -221,7 +545,7 @@
                                 <p class="professor-name">Natalia</p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Darin has been teaching for over 16 years, including 7 years at Algonquin College, and is a graduate of the Interactive Multimedia, Interactive Multimedia Developer, and TALL (teaching certificate) programs.<br> He has a passion for teaching and sharing ideas with students. His background includes a wide variety of disciplines, including graphic design and layout, web publishing, CD/DVD development, photography, audio and video editing, programming, and project management.</p>
+                                <p>Darin has been teaching for over 16 years, including 7 years at Algonquin College, and is a graduate of the Interactive Multimedia, Interactive Multimedia Developer, and TALL (teaching certificate) programs.<br> He has a passion for teaching and sharing ideas with students. His background includes a wide variety of disciplines, including graphic design and layout, web publishing, CD/DVD development, photography, audio and video editing, programming, and project management.</p>
 
                             </div>
                         </div>
@@ -234,7 +558,7 @@
                                 <p class="professor-name">Darin</p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Darin has been teaching for over 16 years, including 7 years at Algonquin College, and is a graduate of the Interactive Multimedia, Interactive Multimedia Developer, and TALL (teaching certificate) programs. He has a passion for teaching and sharing ideas with students. His background includes a wide variety of disciplines, including graphic design and layout, web publishing, CD/DVD development, photography, audio and video editing, programming, and project management.</p>
+                                <p>Darin has been teaching for over 16 years, including 7 years at Algonquin College, and is a graduate of the Interactive Multimedia, Interactive Multimedia Developer, and TALL (teaching certificate) programs. He has a passion for teaching and sharing ideas with students. His background includes a wide variety of disciplines, including graphic design and layout, web publishing, CD/DVD development, photography, audio and video editing, programming, and project management.</p>
 
                             </div>
                         </div>
@@ -247,7 +571,7 @@
                                 <p class="professor-name">Rob</p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">With over twenty years experience in the industry, Rob Kingsbury brings a wide range of knowledge and experiences to the program. He has worked for clients across a diverse range of sectors, from startups to fortune 500 companies. Rob’s goal as an educator is to make web design accessible and fun to learn so that his students can also become passionate about building amazing websites. Rob is a past graduate on the IMM program.</p>
+                                <p>With over twenty years experience in the industry, Rob Kingsbury brings a wide range of knowledge and experiences to the program. He has worked for clients across a diverse range of sectors, from startups to fortune 500 companies. Rob’s goal as an educator is to make web design accessible and fun to learn so that his students can also become passionate about building amazing websites. Rob is a past graduate on the IMM program.</p>
 
                             </div>
                         </div>
@@ -263,20 +587,82 @@
     </section>
 
     <!--TESTIMONIALS SECTION-->
-    <section class="section pb-2 section-program-testimonials">
+    <section class="section section-program-testimonials pb-5">
         <div class="container section-body">
-
             <div>
-                <h2 class="section-title-right">Testimonials</h2>
+                <h2 class="section-title-right" id="Testimonials">Testimonials</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12 testimonial-video ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aXjhyRpMf0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
             </div>
-
         </div>
-
     </section>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer pt-5">
+        <div class="container section-body">
+            <div class="row pt-5">
+                <div class="pt-5 col-xs-12 col-md-6">
+                    <img class="school-of-media" src="assets/images/logos/school-of-media-logo.png" alt="">
+                </div>
+                <div class="pt-5 col-xs-12 col-md-6 footer-nav-link">
+                    <ul class="footer-nav-link">
+                        <li><a href="#Program-Overview" class=" col-xs-12 col-md-6">Program Overview</a></li>
+                        <li><a href="#Courses" class="col-xs-12 col-md-6">Courses</a></li>
+                        <li><a href="#Faculty" class="col-xs-12 col-md-6">Faculty</a></li>
+                        <li><a href="#Testimonials" class="col-xs-12 col-md-6">Testimonials</a></li>
+                        <li class="pt-2 pb-3">
+                            <a href="https://www.facebook.com/acInteractiveMediaMgt/" target="_blank">
+                                <img class="social-media" src="assets/images/social-media-icons/font-awesome/facebook-brands.svg" alt="Facebook">
+                            </a>
+                            <a href="https://www.linkedin.com/in/darin-faber-75221b92/" target="_blank">
+                                <img class="social-media" src="assets/images/social-media-icons/font-awesome/linkedin-brands.svg" alt="LinkedIn">
+                            </a>
+                            <a href="https://twitter.com/IMMALGONQUIN" target="_blank">
+                                <img class="social-media" src="assets/images/social-media-icons/font-awesome/twitter-square-brands.svg" alt="Twitter">
+                            </a>
+                            <a href="https://www.youtube.com/user/algonquinIM" target="_blank">
+                                <img class="social-media" src="assets/images/social-media-icons/font-awesome/youtube-brands.svg" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 justify-content-md-center">
+                <p>The Website was designed by graduates of the program</p>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-xs-6 col-md-3 designer-div">
+                    <a href="https://www.linkedin.com/in/asmaaelsayed/" target="_blank">
+                        <img class="designer pb-3" src="assets/images/designers/asmaa-elsayed.png" alt="Asmaa Elsayed">
+                    </a>
+                    <p>Asmaa Elsayed</p>
+                </div>
+                <div class="col-xs-6 col-md-3 designer-div">
+                    <a href="https://www.linkedin.com/in/tobisitu/" target="_blank">
+                        <img class="designer pb-3" src="assets/images/designers/tobi-situ.png" alt="Tobi Situ">
+                    </a>
+                    <p>Tobi Situ</p>
+                </div>
+                <div class="col-xs-6 col-md-3 designer-div" target="_blank">
+                    <a href="https://www.linkedin.com/in/jiayuechen/">
+                        <img class="designer pb-3" src="assets/images/designers/julia-chen.png" alt="Julia Chen">
+                    </a>
+                    <p>Julia Chen</p>
+
+                </div>
+                <div class="col-xs-6 col-md-3 designer-div" target="_blank">
+                    <a href="https://www.linkedin.com/in/jatinderpalsingh/">
+                        <img class="designer pb-3" src="assets/images/designers/jatinder-singh.png" alt="Jatinder Singh">
+                    </a>
+                    <p>Jatinder Singh</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
