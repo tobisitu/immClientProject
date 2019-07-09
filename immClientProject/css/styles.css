@@ -327,7 +327,7 @@ BACKGROUND ICON
 .card-title h5 {
     -webkit-transform: rotate(-7deg);
     /*    bottom: 0;*/
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     color: #006341;
 }
@@ -336,12 +336,29 @@ BACKGROUND ICON
     transform: rotate(-90deg);
     /*    writing-mode: vertical-rl;*/
     position: absolute;
-    top: 8%;
-    left: -10%;
+    bottom: 85%;
+    left: -16%;
+    width: 170px;
+    height: 20px;
+
+
+}
+
+.professor-name p {
     margin: 0;
-    font-size: 1.8rem;
+    text-align: end;
+    font-size: 1.1rem;
     font-weight: bolder;
     color: #424651;
+    padding: 0;
+}
+
+.section-body .card-body p {
+    padding-right: 2%;
+}
+
+.section-body .professor-name {
+    padding: 0;
 }
 
 .card-body {
@@ -374,6 +391,7 @@ BACKGROUND ICON
     background-size: 18%;
     background-position: 100% 0%;
     border-bottom: none;
+
 }
 
 
@@ -459,11 +477,7 @@ footer p {
 
 @media (max-width: 1000px) {
 
-    /*
-.card {
-    width: 100%;
-}
-*/
+
     #faculty-cards-mobile {
         display: inherit;
     }
@@ -473,5 +487,107 @@ footer p {
     }
 
 }
+
+@media (min-width: 1200px) {
+    .card-title {
+        height: 17.5vh;
+    }
+}
+
+/*Media Queries to keep the positions of the professor names consistent*/
+
+@media (min-width: 1200px) {
+
+
+    .professor-name {
+        bottom: 84.5%;
+        left: -12%;
+        width: 170px;
+        height: 20px;
+
+
+    }
+
+    .professor-name p {
+        margin: 0;
+        text-align: end;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        color: #424651;
+        padding: 0;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 1000px) and (min-width: 992px) {
+
+    .professor-name {
+        bottom: 65%;
+        left: -16%;
+        width: 170px;
+        height: 20px;
+
+
+    }
+
+    .professor-name p {
+        margin: 0;
+        text-align: end;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        color: #424651;
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+    .professor-name {
+        bottom: 60%;
+        left: -25%;
+        width: 170px;
+        height: 20px;
+
+
+    }
+
+    .professor-name p {
+        margin: 0;
+        text-align: end;
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #424651;
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+    .professor-name {
+        bottom: 55%;
+        left: -38%;
+        width: 170px;
+        height: 20px;
+
+
+    }
+
+    .professor-name p {
+        margin: 0;
+        text-align: end;
+        font-size: 0.7rem;
+        font-weight: bolder;
+        color: #424651;
+        padding: 0;
+    }
+
 
 }
