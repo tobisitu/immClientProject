@@ -18,3 +18,8 @@ function scrollSticky() {
         navigationBar.classList.remove("sticky");
     }
 }
+
+
+$('.carousel').carousel({
+    interval: 200
+})
